@@ -4,7 +4,7 @@ public class Resume
 
     public List<Job> _job = new List<Job>();
 
-    public void Display() 
+    public void DisplayResume() 
     {
         Console.WriteLine($"Name: {_name}");
         Console.WriteLine("Jobs:");

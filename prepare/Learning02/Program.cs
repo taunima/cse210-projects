@@ -24,7 +24,7 @@ class Program
         myresume._name = "Simon Taunima";
         myresume._job.Add(job1);
         myresume._job.Add(job2);
-        myresume.Display();
+        myresume.DisplayResume();
 
         ///Console.WriteLine($"{job2._jobTitle}, ({job2._company}), {job2._startdate} - {job2._enddate}");
     }
