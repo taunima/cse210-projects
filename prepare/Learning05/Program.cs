@@ -12,7 +12,7 @@ class Program
         Rectangle s2 = new Rectangle("Yellow", 3, 4);
         shapes.Add(s2);
 
-        Circle s3 = new Circle("Red", 4);
+        Circle s3 = new  Circle("Red", 4);
         shapes.Add(s3);
 
         

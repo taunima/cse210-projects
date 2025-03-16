@@ -6,11 +6,6 @@ public class Activity
 
     private int _duration;
 
-    public Activity()
-    {
-        _duration = 0;
-    }
-
     public Activity(string activity, int duration)
     {
         _activity = activity;
