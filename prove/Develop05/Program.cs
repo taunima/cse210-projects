@@ -70,17 +70,17 @@ class Program
             _goals.Add(new Checklist(name, description, points, totalToComplete, bonusPoints));
         }
 
-        Console.WriteLine("Goal added!\n");
+        Console.WriteLine("Goal added!");
     }
 
     static void DisplayGoals()
     {
-        Console.WriteLine("\nYour Goals:");
+        Console.WriteLine("Your Goals:");
         foreach (var goal in _goals)
         {
             goal.Display();
         }
-        Console.WriteLine($"Total Score: {_userScore} pts\n");
+        Console.WriteLine($"Total Score: {_userScore} pts");
     }
 
     static void SaveGoals()
@@ -93,7 +93,7 @@ class Program
                 writer.WriteLine(goal.GetRepresentation());
             }
         }
-        Console.WriteLine("Goals saved!\n");
+        Console.WriteLine("Goals saved!");
     }
 
     static void LoadGoals()
@@ -133,33 +133,33 @@ class Program
                     _goals.Add(goal);
                 }
             }
-            Console.WriteLine("Goals loaded!\n");
+            Console.WriteLine("Goals loaded!");
         }
         else
         {
-            Console.WriteLine("No save file found.\n");
+            Console.WriteLine("No save file found.");
         }
     }
 
     static void RecordEvent()
     {
-        Console.WriteLine("\nSelect a goal to record:");
+        Console.WriteLine("Select a goal to record:");
         for (int i = 0; i < _goals.Count; i++)
         {
             Console.Write($"{i + 1}. ");
             _goals[i].Display();
         }
 
-        Console.Write("\nEnter goal number: ");
+        Console.Write("Enter goal number: ");
         if (int.TryParse(Console.ReadLine(), out int choice) && choice > 0 && choice <= _goals.Count)
         {
             int pointsEarned = _goals[choice - 1].RecordEvent();
             _userScore += pointsEarned;
-            Console.WriteLine($"You earned {pointsEarned} points! Total Score: {_userScore} pts\n");
+            Console.WriteLine($"You earned {pointsEarned} points! Total Score: {_userScore} pts");
         }
         else
         {
-            Console.WriteLine("Invalid selection.\n");
+            Console.WriteLine("Invalid selection.");
         }
     }
 }
