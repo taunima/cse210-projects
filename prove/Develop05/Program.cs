@@ -39,9 +39,9 @@ class Program
     static void CreateGoal()
     {
         Console.WriteLine("Choose goal type:");
-        Console.WriteLine("1. Simple Goal (One-time completion)");
-        Console.WriteLine("2. Eternal Goal (Repeatable)");
-        Console.WriteLine("3. Checklist Goal (Multiple completions + Bonus)");
+        Console.WriteLine("1. Simple Goal:");
+        Console.WriteLine("2. Eternal Goal:");
+        Console.WriteLine("3. Checklist Goal:");
 
         Console.Write("Enter choice: ");
         string type = Console.ReadLine();
