@@ -4,7 +4,7 @@ using System.IO;
 
 class Files
 {
-private const string Separator = " ~|~ "; // 
+private const string Separator = " ~|~ ";
 
     public void SaveJournal(Journal journal)
     {

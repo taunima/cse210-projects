@@ -11,5 +11,4 @@ public class Resume
         foreach (Job job in _job)
         {job.DisplayJobDetails();}
     }
-
 }
